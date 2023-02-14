@@ -12,12 +12,33 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: Text('Crypto APP'),
       ),
       body: ListView.separated(
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
-            title: Text('Hola'),
+            leading: Image.network(exchanges[index]['image']),
+            title: Text('${exchanges[index]['name']}'),
+            subtitle: Text(
+                '${exchanges[index]['country']}\n${exchanges[index]['year_established']}'),
+            trailing: Container(
+              width: 35,
+              height: 35,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.black,
+              ),
+              child: Center(
+                child: Text(
+                  '${exchanges[index]['trust_score']}',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           );
         },
         separatorBuilder: (BuildContext context, int index) {
