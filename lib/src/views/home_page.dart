@@ -1,7 +1,8 @@
 import 'dart:convert';
 
+import 'package:data/src/components/drawer_home.dart';
 import 'package:flutter/material.dart';
-import 'package:data/data/constants.dart';
+import 'package:data/src/data/constants.dart';
 
 class HomePage extends StatelessWidget {
   var exchanges = jsonDecode(CRYPTO_EXCHANGES) as List;
@@ -14,6 +15,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Crypto APP'),
       ),
+      drawer: DrawerHome(),
       body: ListView.separated(
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
