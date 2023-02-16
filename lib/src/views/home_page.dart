@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:data/src/components/drawer_home.dart';
+import 'package:data/src/views/crypto_exchanges_more_info.dart';
 import 'package:flutter/material.dart';
 import 'package:data/src/data/constants.dart';
 
@@ -41,6 +42,16 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CryptoExchangesMoreInfo(
+                    map: exchanges[index],
+                  ),
+                ),
+              );
+            },
           );
         },
         separatorBuilder: (BuildContext context, int index) {
