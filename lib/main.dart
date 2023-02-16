@@ -1,3 +1,5 @@
+import 'package:data/src/views/crypto_exchange_rates.dart';
+import 'package:data/src/views/crypto_trending.dart';
 import 'package:data/src/views/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +15,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),
+        '/crypto_trending': (context) => CryptoTrending(),
+        '/crypto_exchange_rates': (context) => CryptoExchangeRates(),
       },
     );
   }
