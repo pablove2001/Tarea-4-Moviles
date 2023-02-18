@@ -26,12 +26,17 @@
 
 ### Screenshots de la app:
 -Vista HomePage
+
 ![smn](https://user-images.githubusercontent.com/52970365/219842141-a59b72ab-5241-4384-aba6-97f8c976c8c2.png)
 
 - Drawer
+
 ![enter image description here](https://user-images.githubusercontent.com/52970365/219842523-80fe2e82-8872-4c88-a284-ec9e9897cf0d.png)
 
 - Vista CryptoTrending
+
 ![image](https://user-images.githubusercontent.com/52970365/219842536-3218a4dd-2146-44cb-b4ce-c4ae8c908a95.png)
+
 - Vista Crypto Exchange Rates
+
 ![image](https://user-images.githubusercontent.com/52970365/219842584-bfb24c20-aa46-40ad-bd6b-32d27ba90d28.png)
